@@ -6,13 +6,15 @@
     "type": "git",
     "url": "git@github.com:kmamal/linked-list.git"
   },
+  "license": "MIT",
   "main": "./src/index.js",
-  "exports": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
     "test": "npx @kmamal/testing",
     "update-exports": "node ./scripts/update-exports.mjs"
   },
-  "license": "MIT",
   "dependencies": {
     "@kmamal/util": "^0.1.11"
   },
